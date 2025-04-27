@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #222831;
+  --color-text: #FFFFFF;
+  --color-border: #EEEEEE;
+  --color-span: #00ADB5;
+  --color-btnbg: #393E46BF;
+  --font-poppins: "Poppins", sans-serif;
+  --text-fontsize: 64px;
+  --color-text-white: #FFFFFF;
+  --color-mywork-black: #393E46;
+  --color-textshadow-black: 0 2px 5px black;
+  --color-project: #00ADB5;
+}
+
+
+
+@layer components {
+
+  .container {
+    @apply !max-w-[1240px] mx-auto px-2.5 xl:px-0;
+  }
+
+  .li {
+    @apply text-text font-poppins font-normal text-lg;
+
+  }
+
+}
+
+
+@layer {
+  .btn-text {
+    text-shadow: 0 2px 5px black;
+  }
+}
